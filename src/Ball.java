@@ -27,7 +27,6 @@ public class Ball {
 		@param height altura do retangulo que representa a bola.
 		@param color cor da bola.
 		@param speed velocidade da bola (em pixels por millisegundo).
-		@param hitbox retângulo que representa a caixa de colisão da bola.
 	*/
 
 	public Ball(double cx, double cy, double width, double height, Color color, double speed) {
@@ -124,6 +123,7 @@ public class Ball {
 
 	/**
 		Método que reinicia a posição da bola após pontuar.
+		@param wallId uma string cujo conteúdo identifica uma das paredes da quadra.
 	*/
 
 	public void onWallCollision(String wallId) {
