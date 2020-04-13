@@ -1,0 +1,13 @@
+###########################################
+Nome: Gabriel Felix de Souza Lopes
+Número USP: 11295682
+E-mail USP: gafelix@usp.br
+###########################################
+
+Para testar o jogo, por favor siga as instruções:
+
+1 - Acesse a pasta bin.
+
+2 - Rode o comando java Pong.
+
+###########################################
