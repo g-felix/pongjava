@@ -42,8 +42,8 @@ public class Player {
 	*/
 
 	public void draw() {
-		GameLib.setColor(this.color);
-		GameLib.fillRect(this.cx, this.cy, this.width, this.height);
+		GameLib.setColor(this.getColor());
+		GameLib.fillRect(this.getCx(), this.getCy(), this.getWidth(), this.getHeight());
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class Player {
 	*/
 
 	public void moveUp(long delta) {
-		if(this.getCy() + this.getHeight()/2 < this.v_limit[1])
+		if(this.getCy() + this.getHeight()/2 < this.getUpperEdge())
 			this.cy += round((double) delta * this.speed);
 	}
 
@@ -68,7 +68,7 @@ public class Player {
 	*/
 
 	public void moveDown(long delta) { //OK
-		if(this.getCy() - this.getHeight()/2 > this.v_limit[0])
+		if(this.getCy() - this.getHeight()/2 > this.getBottomEdge())
 			this.cy -= round((double) delta * this.speed);
 	}
 
@@ -118,12 +118,30 @@ public class Player {
 	}
 
 	/**
-		Método que devolve a cor do jogador baseado no Id fornecido.
-		@return a cor do jogador associado ao Id fornecido.
+		Método que devolve a cor do jogador.
+		@return a Color do jogador.
 	*/
-	/**private Color getColor(String playerId) {
-		if(playerId == this.id)
-			return this.color;
-	}*/
+
+	private Color getColor() {
+		return this.color;
+	}
+
+	/**
+		Método que retorna o limite superior.
+		@return valor em double que representa o limite superior do movimento do jogador.
+	*/
+
+	private double getUpperEdge() {
+		return this.v_limit[1];
+	}
+
+	/**
+		Método que retorna o limite inferior.
+		@return valor em double que representa o limite inferior do movimento do jogador.
+	*/
+
+	private double getBottomEdge() {
+		return this.v_limit[0];
+	}
 }
 
