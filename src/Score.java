@@ -29,9 +29,11 @@ public class Score {
 		String score = "Placar: " + this.getScore();
 		
 		if(this.playerId == "Player 1") {
+			GameLib.setColor(Color.GREEN);
 			GameLib.drawText(score, 70, GameLib.ALIGN_LEFT);
 		}
 		if(this.playerId == "Player 2") {
+			GameLib.setColor(Color.BLUE);
 			GameLib.drawText(score, 70, GameLib.ALIGN_RIGHT);		
 		}
 		

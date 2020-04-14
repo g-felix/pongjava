@@ -123,6 +123,7 @@ public class Ball {
 
 	/**
 		Método que reinicia a posição da bola após pontuar.
+
 		@param wallId uma string cujo conteúdo identifica uma das paredes da quadra.
 	*/
 
@@ -197,7 +198,7 @@ public class Ball {
 		@return o valor double da largura do retângulo da bola.
 	*/
 
-	public double getWidth() {
+	double getWidth() {
 		return this.width;
 	}
 
@@ -206,7 +207,7 @@ public class Ball {
 		@return o valor double da altura do retângulo da bola.
 	*/
 
-	public double getHeight() {
+	double getHeight() {
 		return this.height;
 	}
 	
@@ -252,7 +253,7 @@ public class Ball {
 		@return o valor double que representa a direção da bola horizontal.
 	*/
 
-	private double getHorizontalDir() {
+	public double getHorizontalDir() {
 		return this.xDir;
 	}
 
@@ -270,7 +271,7 @@ public class Ball {
 		@return o valor double que representa a direção da bola vertical.
 	*/
 
-	private double getVerticalDir() {
+	public double getVerticalDir() {
 		return this.yDir;
 	}
 

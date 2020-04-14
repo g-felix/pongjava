@@ -8,6 +8,15 @@ Para testar o jogo, por favor siga as instruções:
 
 1 - Acesse a pasta bin.
 
-2 - Rode o comando java Pong.
+2 - Rode o comando "java Pong" na linha de comando.
 
 ###########################################
+
+Pasta "bin"
+- Contém todos os arquivos class do jogo.
+
+Pasta "doc"
+- Contém a documentação das classes Score, Player e Ball.
+
+Pasta "src"
+- Contém os arquivos java originais das classes Score, Player e Ball.
