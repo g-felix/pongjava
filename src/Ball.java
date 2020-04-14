@@ -57,6 +57,8 @@ public class Ball {
 
 	/**
 		Método chamado para atualizar o status da colisão quando a bola sai de um quadrante.
+
+		@return valor booleano que mapeia quando a bola sai de um quadrante para o outro.
 	*/
 	private void updateCollisionStatus() {
 		if(this.cx > this.iniX && alreadyCollidedLeft) {
