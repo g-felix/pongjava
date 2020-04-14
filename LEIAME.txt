@@ -6,17 +6,17 @@ E-mail USP: gafelix@usp.br
 
 Para testar o jogo, por favor siga as instruções:
 
-1 - Acesse a pasta bin.
+1 - Acesse a pasta "bin" através da linha de comando.
 
 2 - Rode o comando "java Pong" na linha de comando.
 
 ###########################################
 
 Pasta "bin"
-- Contém todos os arquivos class do jogo.
+- Contém todos os arquivos "class" do jogo.
 
 Pasta "doc"
-- Contém a documentação das classes Score, Player e Ball.
+- Contém a documentação das classes "Score", "Player" e "Ball".
 
 Pasta "src"
-- Contém os arquivos java originais das classes Score, Player e Ball.
+- Contém os arquivos java originais das classes "Score", "Player" e "Ball".
